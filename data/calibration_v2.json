@@ -1,0 +1,28 @@
+{
+  "calibrated_sigma": 0.006780569806771358,
+  "t_df": 11,
+  "jump": "none (CEA kurtosis=0.70, near-normal)",
+  "vol_multiplier_formula": "1.0 + 汕℅0.5 + 污℅0.3 - 汐℅0.3",
+  "kappa": 0.15,
+  "calibration_logic": {
+    "sigma": "考=0.006781 solved by variance decomposition: run model with 考=0.001, measure realized vol, scale to match CEA daily vol=0.013224",
+    "t_df": "df=11 from t-distribution fit to CEA returns (CEA df=11.1, closest integer)",
+    "jump": "No jump component: CEA excess kurtosis=0.70 (near-normal), Shapiro-Wilk not rejected",
+    "kappa": "百=0.15 standard Walrasian price adjustment speed",
+    "vol_mult": "Cognitive bias vol multiplier: herding amplifies, anchoring dampens"
+  },
+  "empirical_targets": {
+    "CEA_daily_vol": 0.013223521496405195,
+    "CEA_annual_vol": 0.20991689601602906,
+    "CEA_MDD": -0.26916203335980937,
+    "CEA_VaR95": -0.021429818512261157,
+    "CEA_kurtosis": 0.6975781606632445,
+    "CEA_t_df": 11.0953220147066
+  },
+  "cross_market_support": {
+    "t_df_range": "CEA=11.1, KRBN=4.0, CEFD=2.8, GRN=3.6 ↙ use CEA-specific df=11",
+    "jump_prob_range": "All markets ~5% at 2考 threshold, but this reflects t-distribution tails, not separate jumps",
+    "neg_jump_ratio": "CEA=49%, KRBN=55%, CEFD=59%, GRN=44% ↙ symmetric, no asymmetry needed",
+    "garch": "CEA |r|ACF(1)=-0.033 (no clustering), international markets 0.14-0.29 (have clustering)"
+  }
+}

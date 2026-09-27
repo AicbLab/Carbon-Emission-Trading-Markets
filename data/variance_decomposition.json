@@ -1,0 +1,16 @@
+{
+  "sigma_star": null,
+  "vol_multiplier": 1.22,
+  "t_df": 5,
+  "jump_prob": 0.0488,
+  "jump_size": 0.04685,
+  "neg_jump_ratio": 0.52,
+  "kappa": 0.15,
+  "variance_decomposition": {
+    "target_var": 0.0001748615207658903,
+    "walrasian_var": 0.0,
+    "jump_var": 0.00026190802847559654,
+    "noise_var_per_sigma_sq": 6.368457522311895
+  },
+  "data_sources": {
+    "sigma_note": 

@@ -1,0 +1,32 @@
+# Paper files (local only)
+paper/
+docs/
+
+# Debug and process scripts
+debug_*.py
+quick_test_*.py
+calibrate_*.py
+calibrate_v2.py
+
+# IDE / editor
+.qoder/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data output
+output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

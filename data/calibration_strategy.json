@@ -1,0 +1,75 @@
+{
+  "empirical_anchored": {
+    "sigma_base": 0.013223521496405195,
+    "sigma_base_note": "China CEA daily return std",
+    "t_df": 4,
+    "t_df_note": "Cross-market median of t-distribution df",
+    "jump_probability": 0.0488,
+    "jump_prob_note": "Cross-market mean of 2¦Ò jump frequency",
+    "neg_jump_ratio": 0.519,
+    "neg_jump_note": "Cross-market mean negative jump ratio",
+    "mean_jump_size": 0.04685,
+    "jump_size_note": "Cross-market mean absolute jump size",
+    "garch": "none",
+    "garch_note": "CEA |r| ACF(1) = -0.033, not significant"
+  },
+  "calibration_search": {
+    "lambda_range": [
+      1.5,
+      2.0,
+      2.25,
+      2.5,
+      3.0
+    ],
+    "alpha_range": [
+      0.1,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "beta_range": [
+      0.2,
+      0.4,
+      0.5,
+      0.7,
+      0.8
+    ],
+    "gamma_range": [
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "calibration_targets": {
+    "mean_price": 70.4668704379562,
+    "annual_vol": 0.20991689601602906,
+    "max_drawdown": -0.26916203335980937,
+    "var_95": -0.021429818512261157
+  },
+  "cross_market_validation": {
+    "China CEA": {
+      "annual_vol": 0.20991689601602906,
+      "skewness": -0.18137182777757438,
+      "kurtosis": 0.6975781606632445,
+      "mdd": -0.26916203335980937
+    },
+    "KRBN": {
+      "annual_vol": 0.281651958107921,
+      "skewness": -0.36422252190553384,
+      "kurtosis": 5.794390131814225,
+      "mdd": -0.3641721864713297
+    },
+    "CEFD": {
+      "annual_vol": 0.17073825322142394,
+      "skewness": -0.526911516411753,
+      "kurtosis": 10.450843899313446,
+      "mdd": -0.3695080673209411
+    },
+    "GRN": {
+      "annual_vol": 0.4082128552263448,
+      "skewness": -0.05573932674255474,
+      "kurtosis": 5.5580779323711855,
+      "mdd": -0.4796292732704325
+    }
+  }
+}
