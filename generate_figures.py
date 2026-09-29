@@ -289,7 +289,7 @@ def fig3_ablation():
 
     fig.suptitle('Ablation Study: Individual Cognitive Bias Removal', fontsize=14, fontweight='bold', y=1.02)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURE_DIR, 'fig3_ablation.png'))
+    fig.savefig(os.path.join(FIGURE_DIR, 'fig4_ablation.png'))
     plt.close(fig)
     print("  [OK] Fig 3: Ablation study")
 
@@ -358,7 +358,7 @@ def fig4_monte_carlo():
 
     fig.suptitle('Monte Carlo Robustness Validation', fontsize=14, fontweight='bold', y=1.02)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURE_DIR, 'fig4_monte_carlo.png'))
+    fig.savefig(os.path.join(FIGURE_DIR, 'fig3_monte_carlo.png'))
     plt.close(fig)
     print("  [OK] Fig 4: Monte Carlo uncertainty band")
 
@@ -420,7 +420,7 @@ def fig5_drawdown():
 
     fig.suptitle('Drawdown Analysis: Endogenous Risk Floor', fontsize=14, fontweight='bold', y=1.02)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURE_DIR, 'fig5_drawdown.png'))
+    fig.savefig(os.path.join(FIGURE_DIR, 'fig6_drawdown.png'))
     plt.close(fig)
     print("  [OK] Fig 5: Drawdown analysis")
 
@@ -488,7 +488,7 @@ def fig6_stress_test():
     fig.suptitle('Stress Test: Price Dynamics Under Shock Scenarios',
                  fontsize=14, fontweight='bold', y=1.02)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGURE_DIR, 'fig6_stress_test.png'))
+    fig.savefig(os.path.join(FIGURE_DIR, 'fig5_stress_test.png'))
     plt.close(fig)
     print("  [OK] Fig 6: Stress test comparison")
 

@@ -164,7 +164,7 @@ results = stress.run_all_scenarios(sim)
 
 If you use this software in your research, please cite:
 
-> Yin, M. & Li, Z. (2026). Cognitive Biases and Price Formation in Carbon Emission Trading Markets: An Empirically Calibrated Agent-Based Model.
+> Li, Z. & Yin, M. (2026). Cognitive Bias and Price Formation in Carbon Emission Trading Markets: An Empirically Calibrated Agent-Based Model.
 
 ## License
 
